@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playwrite+VN:wght@100..400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  margin-top: 20px;
+}
+
+.landscape {
+  font-family: sans-serif;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+  margin-left: 40px;
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.logo-container h1 {
+  font-family: sans-serif;
+}
+
+.sidebar {
+  background: #525050;
+  width: 30%;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+}
+
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Playwrite VN", cursive;
+}
+
+.main-img {
+  width: 70%;
+  margin-top: 3rem;
+  margin-left: 6rem;
+}
+
+.main-title {
+  transform: rotate(-90deg);
+  /* display: block; */
+  /* margin-top: 10rem; */
+  /* margin-left: auto; */
+  font-size: 3rem;
+  font-family: "Nunito Sans", cursive;
+}
+
+.main-info {
+  display: block;
+  transform: rotate(-90deg);
+  font-family: sans-serif;
+  font-size: large;
+  text-align: center;
+  width: 250px;
+  /* height: 100vh; */
+  padding-bottom: 300px;
+  /* margin-bottom: 5rem; */
+  /* margin-right: 7rem; */
+}
