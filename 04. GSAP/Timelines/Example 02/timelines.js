@@ -2,6 +2,8 @@ const timeline = gsap
   .timeline({
     defaults: {
       duration: 2,
+      //   repeat: -1,
+      //   yoyo: true,
     },
   })
   .to("h1", {
