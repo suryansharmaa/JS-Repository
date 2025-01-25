@@ -21,9 +21,15 @@ fetch("text.txt")
 const screen = document.querySelector(".webpage");
 
 async function fetcher() {
-  let response = await fetch("text.txt");
-  let result = await response.text();
-  screen.innerHTML = result;
+  try {
+    let response = await fetch("text.txt");
+    if (!response.ok) throw Error(response.statusText);
+
+    let result = await response.text();
+    screen.innerHTML = result;
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 fetcher();
